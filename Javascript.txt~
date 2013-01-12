@@ -1,0 +1,27 @@
+comment :: //   and /* */
+variable declaration : var date;
+                                 date = 56;
+                           or   var date = 56;
+                           
+condition :  
+               if ( condition )
+               {        
+                        code;
+               }
+               else
+               {        
+                        code;
+               }
+               
+loops : just like C/C++ ; all r same (while ,do-while , for loop ) and usual break , continue .
+               
+**Equal sign : double equal sign ( == ) check equality
+                     triple equal sign ( === ) check strict equality // counterpart of triple equal ( !== )
+                     
+**Best practice : Define your function before you call them :) 
+
+Array : 
+  var bla = [] ; 
+  array method : bla.join() ; bla.reverse() ; bla.sort() 
+  
+** 5+"5" = "55" 5 automatically converted to string !!

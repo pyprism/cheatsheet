@@ -1,0 +1,10 @@
+add user : useradd -m -g users -G video,audio,optical,storage,power,wheel,
+Ip,scanner -s /bin/bash username
+
+password of user : passwd username
+update package manager : pacman -Syu
+
+install package : pacman -S xorg-server virtualbox-archlinux-editions
+
+
+module :modprove -a vboxguest vboxsf vboxvideo

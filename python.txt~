@@ -1,0 +1,158 @@
+									+---------------------------+
+									|          Python 3         |
+									+---------------------------+
+
+Open Python Documentation GUI in Linux and MAC :: pydoc -g
+															
+ Data Type ::
+ 
+			     |-Numbers 
+ 	Immutable ---|-String (sequence)
+ 				 |-Tuple (sequence)	 Exp:("dsd","ddd",45)					
+		
+		         |-List (sequence)[]
+      Mutable----|-Dictionary (unsequence) {}  # key-value pairs 
+			      Files				
+								
+Verify Datatype :: type()
+Test Object :: isinstance(object,int) (Its returns bool value)
+
+Type Conversion :: int() , float()
+
+Operator :: + ,-,*,/,//,%,**,<,>,==,!=,AND,OR,NOT
+			Order of operation :(pemdas)
+			                   P:Parenthesis
+			                   E:Exponentiation
+			                   M:Multiplication
+			                   D:Division
+			                   A:Addition
+			                   S:Subtraction
+			                   
+			               
+      String Operation ::
+      len(a)  #Gives character length
+      a+a     #concatenation
+      a*a     #Repitation
+      str(a)  #type casting
+      a[1:5] 
+      a.find()  
+      a.replace()
+      a.splite()
+      a.upper()
+      a.lower()
+      
+      
+      Tuple::
+      advantage : Read only
+      			  Faster than list
+      			  Can be used as a dict. key 
+      			  
+  
+  Funtion Note : Without 'return' in a funtion u can't store object in a varible     			  
+				* Argument position is a matter but :
+						
+						
+		here it is different :
+		def fun(name,location,year=2012):
+						nly="%s/%s/%d"(name,location,year)
+						print(nly)
+						return nly
+		
+		fun(location="Bhooter Golli",year=420,name="Abul Mama"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
