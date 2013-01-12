@@ -67,6 +67,10 @@ undo :>>>>>
 ignore files = nano .gitignore
                       filenames [we can use regex ]
 
+push to remote host :>>>>
+        check remote = git remote
+        add remote = git remote add <alias> <url>
+        push to remote = git push -u 
                     
  
 

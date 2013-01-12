@@ -69,7 +69,8 @@ ignore files = nano .gitignore
 
 push to remote host :>>>>
         check remote = git remote
-        push to remote = git remote add <alias> <url>
+        add remote = git remote add <alias> <url>
+        push to remote = git push -u origin master
                     
  
 
