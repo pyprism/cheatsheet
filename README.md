@@ -1,2 +1,1 @@
-cheatsheet
-==========
+Personal cheat sheet :)
