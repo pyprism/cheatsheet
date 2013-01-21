@@ -1,0 +1,15 @@
+Function() :
+     
+String->
+        Repeat : str_repeat(string,2)
+        Make substring : substr(string,2,5)
+        Find position: strpos(string ,"example")
+        Find character : strchr(string,"a")
+        
+Number->
+        Absolute value : abs(0-300);
+        Exponential : pow(2,8);
+        Square root : sqrt(100);
+        Modulo: fmod(20,7);
+        Random(any) : rand();
+        Random(min,max): rand(1,10);
