@@ -1,11 +1,66 @@
-HTML Headings :: HTML headings are defined with the <h1> to <h6> tags.
-HTML Paragraphs :: HTML paragraphs are defined with the <p> tag.
-HTML Links :: <a href="http://www.w3schools.com">This is a link</a> 
-HTML Images :: <img src="w3schools.jpg" width="104" height="142" /> 
-HTML Comments :: <!-- This is a comment --> 
+<p> tag  atribute "align" = center
+		            justify
+		            right
+			    left
 
-Horizontal lines :: <hr />
-HTML Line Breaks :: Use the <br /> tag if you want a line break (a new line) without starting a new paragraph:
+non breaking space : &nbsp;
 
-Online validator :: http://validator.w3.org/
+Phrase markup : <strong></strong>
+			<emp></emp>a
+			<q></q>   [quatoes]
+			<code></code>
+			<abbr title="meaning">m</abbr>
+			<acronym title="meaning">m</acrontm>
+			<dfn title="meaning and perpose">meaning</dfn>
+			<samp>bla</samp>
+			<var>bitch</var>
 
+Font markup : <big></big>
+		      <b></b>
+		      <i></i> [italics]
+		      <strike></strike> or <s></s>
+		      <small></small>
+		      <tt></tt>
+		      <u></u> [underline]
+
+Quote tag : <blockquote></blockquote>
+		  <q></q> [not supported by all browser]
+
+Preformat : <pre></pre> [ display content as it have in source code ]
+Font face : <font face="names of fonts">content</font>
+               <font face="san-serif" size="2"></font>
+
+List : Unordered list >
+                        <ul type="type">  [type : square ,circle]
+                             <li></li>
+                         <ul>
+       Ordered list >
+                       <ol type="type"> [type:A,a,1,for roman"I" or "i"]
+                             <li></li>
+                       </ol>
+       Definition list >
+                       <dl>
+                           <dt></dt>
+                                <dd></dd>
+                        </dl>
+
+
+Image tag : <img src="source" alt="short decription of image" title=" " align="left" hspace="5" border="0" width="2" height="" />
+
+Link tag : <a href="url" title="" terget="_blank"></a>
+        Fragment link > 1.<a href="#a">Bla</a>
+                           2. <a name="a"></a>
+        Image link > <a href="url"><img src="imagefilename" border="0" width="5" height="5"/></a>
+
+
+Table :  <table border="1">
+                <caption>
+                       Table title
+                </caption>
+                <tr>
+                   <th>table heading</th>
+                 </tr>
+                 <tr valign="top">
+                    <td>table data</td>
+                  <tr>
+            </table>
