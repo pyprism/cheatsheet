@@ -53,3 +53,11 @@ Print :  echo ""
                            }
 
 conneting to database : $conn = new PDO('databaseDriver:hostsname;databasename;',databaseUsername,dataBasePassword);
+
+** For substition use double quote not single quote " "
+**Inside echo use echo "{$variable_name}";
+
+Dynamic variable : $var;
+                            $$var  //this is dynamic variable
+
+** static varibale and global varibale example : static $var ; golbal $var ;
