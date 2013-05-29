@@ -38,4 +38,14 @@ Function creation : function blaBla(x,y){
                         return x,y;
                        }
 
-array declaration : var foo = new Array() ;
+array declaration : var foo = new Array() ; 
+				or var foo = new Array(size);
+			      or var foo = new Array(value1,value2);
+			      or var foo =[value1 , value 2 ] ;
+			      var foo[0] = value ;
+			      
+   String array :  var foo = new Array(size);
+   				foo[0] = "hello hiren  :) " ;
+   		 or       names = new Array(“Henry J. Tillman”, “Sherlock Holmes”);
+            or        names = [“Henry J. Tillman”, “Sherlock Holmes”];
+            
