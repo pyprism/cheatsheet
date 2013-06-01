@@ -49,3 +49,9 @@ array declaration : var foo = new Array() ;
    		 or       names = new Array(“Henry J. Tillman”, “Sherlock Holmes”);
             or        names = [“Henry J. Tillman”, “Sherlock Holmes”];
             
+###Create new Object : 
+var person = new Object();
+person.name = "Hiren" ;
+person.age = 19 ;
+Shorthand : 
+var person = {name : "Hiren" , age : "19"} ;
