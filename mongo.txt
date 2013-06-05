@@ -1,3 +1,9 @@
+Term :
+Collection : Table (SQL)
+Document : Record or Row (SQL)
+Field (key : value) : Column (SQL)
+
+
 connect mongp shell : mongo
 show all databases : show dbs
 connect to a database : use databaseName
@@ -45,3 +51,9 @@ $where
 db.links.distinct('favourites')  # remove duplicate
 
 db.links.group({ key : { userId : true }) 
+
+
+Update : 
+db.users.update({ 'name.last' : 'John'}, { job : 'Developer'});
+db.users.update({name : "Hiren"} , {name : "Hiren Down" , job : "Python Developer"} )  #Find name hiren and replace with Hiren Down and Job Bla bla
+
