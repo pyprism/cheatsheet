@@ -80,9 +80,56 @@ show table of previously selected database : SHOW TABLES;
 use the describe command (or desc for short) to look at the table definition:  DESC tablename; |or|  describe tablename;
 Table create : CREATE TABLE tablename ( data type declare );
 
+###########################@@@@@@###############
 
-   
+Show table definition : explain tablename;
+INSERT DATA : insert into tablename values(DATA);
+OR  insert into tablename(column) value (data);
+Select data : select * from tablename;
+or select columnName,columnName2 from tablename;
+
+Data Type :
+varchar  = create table person( name varchar(100)) ;
+text = create table emai ( body text);
+int  = create table person (age integer);
+int  = create table person (age integer unsigned );  # expected +ve value
+*There is also tinyint and mediumint 
+decimal = create table student(av g_score deimal(10,5) ; #decimal(precision ,scope)
+auto_increment = create table student( id integar auto_increment) ;
+date , time ,datetime :
+date  = 'YYYY-MM-DD'
+time = '[H]HH:MM:SS'
+datetime =  'YYYY-MM-DD HH:MM:SS'
+ex. create table order(order_date date) ;
+Bool : 0 is false and non-0 is true 
+ex. create table order (fulfilled boolean);
+Default values : create table order ( coupon varchar(100) default "no discount" ) ;
+
+Primary key : see google  :P
 
 
+Alter:
+Alter table : alter table tableName rename newTableName ;
+Alter Column : alter table cases add columnName varchar(100);
+Alter ..............
 
 
+Delete And Drop:
+Drop table : Drop table tableName ; 
+delete : delete from tableName ; 
+
+Update :
+update ..................................
+
+Where ,limit:
+Select * from tableName where x = "a";
+operators for where :-
+=            ALL        NOT
+>            AND       OR
+<            ANY        SOME
+>=          Between   IN 
+<=          EXITS      LIke
+<>
+!=
+
+select * from tableName Limit 5;
