@@ -31,14 +31,23 @@ Super global array :
         • $_SESSION: Current session data specific to the user
         • $_COOKIE: Data stored on the user’s browser as a cookie
 
-Declare array : $months = array("january","Febriary");
-                or : $months = ["january","Febriary"];
+Declare array : $months = array("january","February");
+                or : $months = ["january","February"];  //php 5.4
 
-Condition check : if( == )   and if ( === )
+Condition check : if( == )   and if ( === )  and if(!==)
                           else()
 
                          switch statement
                          while loop
+           foreach loop : ex : $arr = ["Hiren","12 June"];
+            					foreach($arr as $name){
+            					    echo $name;
+            					}
+            			OR :     $arr = [ "Hiren" => "Personality" , "12 June" => "12 August"]
+            			           foreach($arr as $taiNa => $name)
+            			           { 
+            			               echo $taiNa ;   //output  Personality12 June
+            			           }
 
 Print :  echo ""
            printf()  [Formated output just like C]
@@ -61,3 +70,5 @@ Dynamic variable : $var;
                             $$var  //this is dynamic variable
 
 ** static varibale and global varibale example : static $var ; golbal $var ;
+
+
