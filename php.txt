@@ -46,14 +46,14 @@ Condition check : if( == )   and if ( === )  and if(!==)
             			OR :     $arr = [ "Hiren" => "Personality" , "12 June" => "12 August"]
             			           foreach($arr as $taiNa => $name)
             			           { 
-            			               echo $taiNa ;   //output  Personality12 June
+            			               echo $name ;   //output  Personality12 June
             			           }
 
 Print :  echo ""
            printf()  [Formated output just like C]
-           sprintf() [Return formated ouput]
            print()    [Just print string ]
            print_r() [Print array's item]
+           sprintf() [ useful for storing an output in variable ]
 
 
  Define funtion : function(paramiter){
@@ -71,4 +71,9 @@ Dynamic variable : $var;
 
 ** static varibale and global varibale example : static $var ; golbal $var ;
 
+Include/requre/requre_once : include "about.php" ;
 
+
+$_GET['Variable']   //Use only for fetch data like item list etc. Not for updating database
+**Check is variable is not empty using isset(var)
+**For security use htmlspecialchars($_GET['var'])
