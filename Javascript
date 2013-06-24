@@ -20,9 +20,9 @@ loops : just like C/C++ ; all r same (while ,do-while , for loop ) and usual bre
                      
 **Best practice : Define your function before you call them :) 
 
-Array : 
-  var bla = [] ; 
-  array method : bla.join() ; bla.reverse() ; bla.sort() 
+Array :
+  var bla = [] ;
+  array method : bla.join() ; bla.reverse() ; bla.sort()
   
 ** 5+"5" = "55" 5 automatically converted to string !!
 ** js converntion : variable name can me camelcase like var whatIsGoingOnGuys; but not this what_is_going .....
@@ -55,3 +55,5 @@ person.name = "Hiren" ;
 person.age = 19 ;
 Shorthand : 
 var person = {name : "Hiren" , age : "19"} ;
+
+** use only 1 window.onload function per page . If there are multiple js scirpt , last one will be applicable
