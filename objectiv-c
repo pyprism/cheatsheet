@@ -1,0 +1,14 @@
+variable :
+same as C > int , float , double, char and BOOL
+
+print :
+NSLog();
+exmaple>
+	NSLog(@"Hello Hiren");  // use @ for string
+
+conditions :
+same as C
+
+Loop :
+same as C !!!!
+
