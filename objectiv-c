@@ -1,5 +1,8 @@
 variable :
 same as C > int , float , double, char and BOOL
+for float use float x = 2.5f ;
+for BOOL , BOOT isComplited = YES ; // or NO
+String > NSString *x = @"Hiren" ;
 
 print :
 NSLog();
@@ -12,3 +15,9 @@ same as C
 Loop :
 same as C !!!!
 
+** %i for int %f or %e for float  and double , %c for char , for String %@
+
+Casting :
+int a = 45 ;
+int b = 4 ; 
+float x = (float) a/b ;
