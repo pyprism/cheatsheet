@@ -43,7 +43,7 @@ Function creation : function blaBla(x,y){
                         return x,y;
                        }
 
-array declaration : var foo = new Array() ; 
+###array declaration : var foo = new Array() ; 
 				or var foo = new Array(size);
 			      or var foo = new Array(value1,value2);
 			      or var foo =[value1 , value 2 ] ;
@@ -53,12 +53,33 @@ array declaration : var foo = new Array() ;
    				foo[0] = "hello hiren  :) " ;
    		 or       names = new Array(“Henry J. Tillman”, “Sherlock Holmes”);
             or        names = [“Henry J. Tillman”, “Sherlock Holmes”];
-            
-###Create new Object : 
-var person = new Object();
-person.name = "Hiren" ;
-person.age = 19 ;
-Shorthand : 
-var person = {name : "Hiren" , age : "19"} ;
+tips : use array.length for adding a item to the end of an array
+      var hiren = ["12 june" ];
+      hiren[hiren.lenght] = "Tai Na" ;
+      hiren[hiren.length] = "12 August" ;            
+
 
 ** use only 1 window.onload function per page . If there are multiple js scirpt , last one will be applicable
+
+###Create new Object : 
+var person = new Object();  OR var person = {} ; 
+person.name = "Hiren" ;     OR person.[age] = "Hiren" ; //usefull for variable property
+person.age = 19 ;
+Shorthand : var person = {name : "Hiren" ,
+                          age : "19"
+                          } ;
+exmample of passing argument in object :
+function displayInfo(args){
+  var output = "" ;
+  if ( typeod args.name = "string") {
+      output += "Name: " + args.name + "\n" ;
+      }
+  if (typeof args.age = "number"){
+    output += "Age: " + agrs.age + "\n" ;
+    }
+    alert(output) ;
+  }
+displayInfo({
+  name : "Hiren" ,
+  age : 19 
+}) ;
