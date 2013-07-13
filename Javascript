@@ -68,6 +68,13 @@ person.age = 19 ;
 Shorthand : var person = {name : "Hiren" ,
                           age : "19"
                           } ;
+Create method :
+var person = {
+  sayname : function(){
+    alert("afa");
+  }
+}
+
 exmample of passing argument in object :
 function displayInfo(args){
   var output = "" ;
