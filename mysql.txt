@@ -105,7 +105,7 @@ Bool : 0 is false and non-0 is true
 ex. create table order (fulfilled boolean);
 Default values : create table order ( coupon varchar(100) default "no discount" ) ;
 
-Primary key : see google  :P
+Primary key : create table hiren( id int primary key auto_increment);
 
 
 Alter:
