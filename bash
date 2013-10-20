@@ -23,3 +23,8 @@
 			-gt : grrater than
 			
 # And => && , OR => ||
+
+##Input redirection
+
+Input =>  <  
+Output =>  > and  >> (append end of a file )
