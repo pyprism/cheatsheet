@@ -34,16 +34,63 @@ Where OP is
 Input =>  <
 Output =>  > and  >> (append end of a file )
 ```
+###If Else
+```bash
+if [[ test ]]; then
+    //code
+elif [[ test ]]; then
+    //code
+else
+    //hiren code :D
+fi
+```
+
 ###loop
-while =>   while test; do
-			code
-		  done
+######while =>   
+```
+while test; do
+      //code
+done
+```
 
-until =>  until test; do  #similar to while loop, it continues as long as test returns false ! funny lol
-			code
-		done
+######until =>
+```bash
+until test; do
+    //code
+done
+```
+######similar to while loop, it continues as long as test returns false ! funny lol
 
-Classic for loop  =>  for VAR in WORDS; do
-			// code
-		      done
-		** Dont quote WORDS
+######Classic for loop  =>
+```bash
+for VAR in WORDS; do
+	// code
+done
+```
+###### Dont quote WORDS in for loop
+###### Example:
+```bash
+for i in u r a hiren;do
+    echo $i;
+done
+```
+######output
+```bash
+u
+r
+a
+hiren
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
