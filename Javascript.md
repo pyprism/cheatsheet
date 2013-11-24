@@ -1,23 +1,29 @@
-####comment :: //   and /* */
+####comment 
+//   and /* */
 
 #### Noscript element  
-```<noscript>
+```javascript
+<noscript>
                       <p>This page requires a JavaScript-enabled browser.</p>
                    </noscript>```
 
-####variable declaration : var date;
-                                ``` date = 56;
-                           or   var date = 56; ```
+#### variable declaration  
+```javascript
+var date;
+date = 56; ```
+or   
+```var date = 56; ```
                            
-condition :  
-               if ( condition )
-               {        
-                        code;
-               }
-               else
-               {        
-                        code;
-               }
+#### condition   
+```javascript
+if ( condition )
+{        
+   code;
+}
+else
+{        
+   code;
+} ```
                
 loops : just like C/C++ ; all r same (while ,do-while , for loop ) and usual break , continue .
                
