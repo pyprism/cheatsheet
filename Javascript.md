@@ -1,12 +1,13 @@
-comment :: //   and /* */
+####comment :: //   and /* */
 
-Noscript element : <noscript>
+#### Noscript element  
+```<noscript>
                       <p>This page requires a JavaScript-enabled browser.</p>
-                   </noscript>
+                   </noscript>```
 
-variable declaration : var date;
-                                 date = 56;
-                           or   var date = 56;
+####variable declaration : var date;
+                                ``` date = 56;
+                           or   var date = 56; ```
                            
 condition :  
                if ( condition )
