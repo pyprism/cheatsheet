@@ -81,9 +81,39 @@ r
 a
 hiren
 ```
-
-
-
+######C-Style For Loop
+```bash
+for (( init; test; update )); do
+    ;; loop code
+done
+```
+######Case statement
+```bash
+case WORD in
+    pattern1)
+        code for pattern1;;
+    pattern2)
+        code for pattern2
+esac
+```
+######Example:
+```bash
+#!/bin/bash
+case $1 in
+    cat)
+       echo "meow";;
+    dog)
+       echo "woof";;
+    *)
+       echo "hiren"
+esac
+```
+#####Break and Continue
+   1. break
+       * quits the loop
+   2. continue
+       * skips rest of the current lopp
+       * continues with the next iteration
 
 
 
