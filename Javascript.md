@@ -4,8 +4,7 @@
 #### Noscript element  
 ```javascript
 <noscript>
-                      <p>This page requires a JavaScript-enabled browser.</p>
-                   </noscript>```
+<p>This page requires a JavaScript-enabled browser.</p></noscript>```
 
 #### variable declaration  
 ```javascript
