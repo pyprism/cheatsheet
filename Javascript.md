@@ -4,12 +4,14 @@
 #### Noscript element  
 ```javascript
 <noscript>
-<p>This page requires a JavaScript-enabled browser.</p></noscript>```
+<p>This page requires a JavaScript-enabled browser.</p></noscript>
+```
 
 #### variable declaration  
 ```javascript
 var date;
-date = 56; ```
+date = 56;
+```
 or   
 ```var date = 56; ```
                            
@@ -22,7 +24,8 @@ if ( condition )
 else
 {        
    code;
-} ```
+}
+```
                
 #### loops 
  just like C/C++ ; all r same (while ,do-while , for loop ) and usual break , continue .
@@ -36,7 +39,8 @@ Define your function before you call them :)
 
 #### Array
 ```javascript
-var bla = [] ; ```
+var bla = [] ;
+```
 ##### array method 
 ```javascript
 bla.join() ; 
@@ -52,14 +56,16 @@ int or float to string = 6 + "" = "6"
 String to int or float = parseInt("10")  =10
 parseFloat("10.5") =10.5
 parseInt(15.6) = 15
-parseInt("43s64") = 43 ```
+parseInt("43s64") = 43 
+```
                                   
 ####Function creation 
 ```javascript
  function blaBla(x,y){
      do something here ;
      return x,y;
-   }```
+   }
+```
 ###array declaration : var foo = new Array() ; 
 				or var foo = new Array(size);
 			      or var foo = new Array(value1,value2);
