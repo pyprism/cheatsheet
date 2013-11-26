@@ -1,16 +1,4 @@
-setup:
-      Install Python if you don't have it.
-      Install PIP and distribute using http://pypi.python.org/pypi/distribute.
-      Run pip install regetron
-
-      or
-
-      1.$ git clone git://gitorious.org/regetron/regetron.git
-      2.$ cd regetron
-      3.$ sudo python setup.py install
-
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
+```
 . 	Any character except newline.
 \. 	A period (and so on for \*, \(, \\, etc.)
 ^ 	The start of the string.
@@ -33,3 +21,4 @@ aa|bb 	Either aa or bb.
 (?:expr) 	Non-capturing group.
 (?=expr) 	Followed by expr.
 (?!expr) 	Not followed by expr.
+```
