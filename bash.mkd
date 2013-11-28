@@ -115,8 +115,11 @@ esac
        * skips rest of the current lopp
        * continues with the next iteration
 
-
-
+#####Error handling on pipe :P 
+```bash
+cat hiren 2> log.txt
+cat hiren 2>> hiren.txt
+```
 
 
 
