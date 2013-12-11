@@ -16,9 +16,18 @@ create table hiren(name varchar(100));
 ```
 Show relations
 ```
-\d
+\d hiren
 ```
 Insert data or new row in a table
 ```
 insert into hiren(name) values('nis');
+```
+Add primary key to existing table
+```
+alter table hiren add column hiren_id serial primary key;
+alter table hiren add column xyz varchar(100) not null;
+```
+Update
+```
+update <table name> set <row name>=<value> where <row name> = <value>
 ```
