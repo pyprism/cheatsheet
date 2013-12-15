@@ -38,3 +38,9 @@ Numerical | Integer,float,numeric,real , serial
 Character | char , varchar , text
 Logical | Boolean
 Temporal | Date , Time , Timestamp ,Interval , Timestamptz
+Binary | Bytea , Bit , Bit Varying
+Geo-Spatial | Point , Path , Polygon , Circle , Line
+Internet | Inet , Cidr , Macaddr
+Special | Enum , Range , Json , Xml ,Oid
+Array | []
+Composite type | Type
