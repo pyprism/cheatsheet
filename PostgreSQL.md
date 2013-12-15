@@ -32,6 +32,7 @@ Update
 update <table name> set <row name>=<value> where <row name> = <value>
 ```
 Data Types
+
 Type | Name
 --------|-----------
 Numerical | Integer,float,numeric,real , serial
