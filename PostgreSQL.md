@@ -34,6 +34,7 @@ update <table name> set <row name>=<value> where <row name> = <value>
 Data Types
 
 Numerical | Integer,float,numeric,real , serial
+--------|-----------
 Character | char , varchar , text
 Logical | Boolean
 Temporal | Date , Time , Timestamp ,Interval , Timestamptz
