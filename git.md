@@ -1,9 +1,14 @@
-Username :: git config --global user.name "Your Name Here"  # Sets the default name for git to use when you commit
-Email :: git config --global user.email "your_email@youremail.com"   # Sets the default email for git to use when you commit
+#### Username 
+git config --global user.name "Your Name Here" 
+#### Email 
+git config --global user.email "your_email@youremail.com"  
 
-Password caching :: git config --global credential.helper cache       # Set git to use the credential memory cache;By default
-																								  # git will cache your password for 15 minutes
-                           git config --global credential.helper 'cache --timeout=3600'    # Set the cache to timeout after 1 hour (setting is in seconds)
+#### Password caching 
+git config --global credential.helper cache 
+###### git will cache your password for 15 minutes
+#### Set the cache to timeout after 1 hour (setting is in seconds)
+git config --global credential.helper 'cache --timeout=3600'   
+#### Enable color output
 color-ui =  git config --global color.ui true
 git init
 git status
