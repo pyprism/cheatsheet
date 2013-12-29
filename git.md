@@ -1,20 +1,35 @@
 #### Username 
-git config --global user.name "Your Name Here" 
-#### Email 
+```
+git config --global user.name "Your Name Here"
+```
+#### Email
+```
 git config --global user.email "your_email@youremail.com"  
-
-#### Password caching 
+```
+#### Password caching
+```
 git config --global credential.helper cache 
+```
 ###### git will cache your password for 15 minutes
 #### Set the cache to timeout after 1 hour (setting is in seconds)
+```
 git config --global credential.helper 'cache --timeout=3600'   
+```
 #### Enable color output
+```
 color-ui =  git config --global color.ui true
+```
+###Shortcut way  :D
+```
 git init
 git status
 git add <filenames>
-git commit -m "Add cute octocat story" #add a decribing mesg what i changed
-git add '*.tx­t'  # adding all file
+git commit -m "Add cute octocat story"
+```
+#### Add specific pattern 
+```
+git add '*.tx­
+```
 git remote add origin <giturl> 
 git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
                           #the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and 
