@@ -4,7 +4,7 @@ git config --global user.name "Your Name Here"
 ```
 #### Email
 ```
-git config --global user.email "your_email@youremail.com"  
+git config --global user.email "hiren@mail.com"  
 ```
 #### Password caching
 ```
@@ -28,7 +28,23 @@ git commit -m "Add cute octocat story"
 ```
 #### Add specific pattern 
 ```
-git add '*.tx­
+git add '*.txt'
+```
+#### Only add previously
+```
+git commit -a
+```
+####Add commit message using the editor
+```
+git commit
+```
+####Add Commit message without the editor
+```
+git commit -m 'commit mesg'
+```
+#### Skip the staging part(y) ;)
+```
+git commit -am 'hiren'
 ```
 git remote add origin <giturl> 
 git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
