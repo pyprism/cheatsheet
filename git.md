@@ -19,6 +19,10 @@ git config --global credential.helper 'cache --timeout=3600'
 ```
 color-ui =  git config --global color.ui true
 ```
+####Edit default editor
+```
+git config --global core.editor "nano"
+```
 ###Shortcut way  :D
 ```
 git init
@@ -46,6 +50,25 @@ git commit -m 'commit mesg'
 ```
 git commit -am 'hiren'
 ```
+####Show difference
+```
+git diff filename
+```
+```
+git diff HEAD filename
+```
+```
+git diff --staged filename
+```
+####Show all commit history
+```
+git log
+```
+####Commit history statistics
+```
+git log --stat
+```
+
 git remote add origin <giturl> 
 git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
                           #the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and 
@@ -67,7 +90,6 @@ git push                  # push to remote repo
  set user level username and email  = git config --global user.name "Ashutosh Das"
                                                         git config --global user.email "Your@email.com"
 set up default editor = git config --global core.editor "nano"
-Colored output = git config --global color.ui true
 ****See those configuration = git config --list
 
 git auto-completion = curl -OL https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
