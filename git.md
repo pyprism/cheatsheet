@@ -68,6 +68,38 @@ git log
 ```
 git log --stat
 ```
+####Commit history in one line 
+```
+git log --oneline
+```
+####Commit history with graph ! (Useful for branches)
+```
+git log --graph
+```
+####Commit history of all braches
+```
+git log --graph -all
+```
+####Commit history of all braches with brach name
+```
+git log --graph --all --decorate
+```
+####Show working and list of all branch
+```
+git branch
+```
+####Create a new branch
+```
+git branch branchName
+```
+####Switch to branch 
+```
+git checkout branchName
+```
+####Shortcut:Create and switch branch
+```
+git checkout -b brachName
+```
 
 git remote add origin <giturl> 
 git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
