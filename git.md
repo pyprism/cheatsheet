@@ -100,7 +100,18 @@ git checkout branchName
 ```
 git checkout -b brachName
 ```
-
+#####Marging branch
+```
+git marge branchName
+```
+####Delete a branch
+```
+git branch -d branchName
+```
+####Rebase
+```
+git rebase branchName
+```
 git remote add origin <giturl> 
 git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
                           #the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and 
