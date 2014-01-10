@@ -112,10 +112,18 @@ git branch -d branchName
 ```
 git rebase branchName
 ```
-git remote add origin <giturl> 
-git push -u origi­n maste­r #The name of our remote is origin and the default local branch name is master. The -u tells Git to remember 
-                          #the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and 
-                          #push   it!
+####Remote URL
+```
+git remote add <name> <giturl>
+``` 
+####Git push
+```
+git push -u origi­n maste­r 
+```
+#####Then for next time
+```
+git push
+```
                           
 git reset <filename>      #unstatge file
 git branch <branchname>   #for making bruch of main Master brunch
