@@ -124,7 +124,11 @@ git push -u origi­n maste­r
 ```
 git push
 ```
-                          
+####Interactive adding
+```
+git add -i
+```
+                        
 git reset <filename>      #unstatge file
 git branch <branchname>   #for making bruch of main Master brunch
 git checkout <branchname> #swicth branch
