@@ -19,3 +19,7 @@ sudo docker pull <instance name>
 ```
 sudo docker ps
 ```
+####Kill instance
+```
+sudo docker kill <container Id>
+```
