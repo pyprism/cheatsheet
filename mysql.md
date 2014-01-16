@@ -1,3 +1,31 @@
+####Connect from terminal
+```
+mysql -u <user> -p
+```
+####Create database
+```
+create database <databaseName>
+```
+####Show databases
+```
+show databases
+```
+####Connect to a database
+```
+use <databaseName>
+```
+####Create table
+```
+create table <name>(
+    <col-name> <col-type>,
+    <col-name> <col-type>
+    );
+```
+####Table deffinition
+```
+explain <tableName>
+```
+
               ################    MySQL   Data    Type  ####################
               
                       :::MySQL text types:::
