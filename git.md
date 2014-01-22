@@ -128,7 +128,21 @@ git push
 ```
 git add -i
 ```
-                        
+####Removing untracked files from a git repo 
+```
+git clean -df
+```
+######You only need to pass -d if you have untracked directories. You only need to pass -f (force) if you have git configured with clean.requireForce set to true, which you likely do.
+#####avoid removing files unintentionally, run the following first
+```
+git clean -n
+```
+######This is a 'dry run' and it tells you which files git plans on removing before it actually removes them. 
+####This will give you options, including removing files that match a pattern.
+```
+git clean -i
+```
+
 git reset <filename>      #unstatge file
 git branch <branchname>   #for making bruch of main Master brunch
 git checkout <branchname> #swicth branch
