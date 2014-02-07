@@ -46,3 +46,12 @@ decr <key>
 incrby <key> 5
 decrby <key> 20
 ```
+######Float increment (only for integer )
+```
+incrbyfloat <key> <float value> 
+```
+######Set expire time
+```
+setex <key> <time in secound> <value>
+setex name 4 hiren
+```
