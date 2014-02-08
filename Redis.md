@@ -52,6 +52,20 @@ incrbyfloat <key> <float value>
 ```
 ######Set expire time
 ```
-setex <key> <time in secound> <value>
+setex <key> <time in second> <value>
 setex name 4 hiren
 ```
+######Only set value if doesnt exits
+```
+setnx <key> <value>
+```
+######Multi setnx
+```
+msetnx <key> <value> <key> <value>
+```
+######Length of a value
+```
+strlen <key>
+```
+
+
