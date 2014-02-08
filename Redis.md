@@ -68,4 +68,71 @@ msetnx <key> <value> <key> <value>
 strlen <key>
 ```
 
+##### List
+######Lpush ( Left push )
+```
+lpush <list name or key >  <value> <value>
+```
+######Rpush ( Right push )
+```
+rpush <key or list name > <value> <value>
+```
+######Lpushx and Rpushx (push if the list is exits)
+```
+lpushx <list name or the key > <value>
+rpushx <list name or the key > <value>
+```
+######Length of a list
+```
+llen <list name >
+llen hiren
+```
+######Get values
+```
+lrange <list name> <starting position> <ending position>
+```
+Tips : For grabbing whole list use starting position = 0 and ending position = -1 
+
+###### Pop from left or right side
+```
+lpop <value>
+rpop <value>
+```
+######Remove value
+```
+lrem <list name> 2 <value>
+```
+######Insert middle 
+```
+linsert <list name> before <existing value> <new value>
+linsert <list name> after <existing value> <new value>
+```
+######Get value using index
+```
+lindex <list name> <index no>
+```
+######Set value using index
+```
+lset <list name> <index number> <new value>
+```
+######Trim
+```
+ltrim <list name > <starting position > <ending position>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
