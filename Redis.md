@@ -1,8 +1,8 @@
-####Redis datastructures
+###Redis datastructures
 ```
 string , list , hash , set and sorted set
 ```
-#####String
+####String
 ######Set value
 ```
 set <key name> <value>
@@ -68,7 +68,7 @@ msetnx <key> <value> <key> <value>
 strlen <key>
 ```
 
-##### List
+#### List
 ######Lpush ( Left push )
 ```
 lpush <list name or key >  <value> <value>
@@ -117,7 +117,55 @@ lset <list name> <index number> <new value>
 ```
 ######Trim
 ```
-ltrim <list name > <starting position > <ending position>
+ltrim <list name> <starting position> <ending position>
+```
+####Hash
+######Set command
+```
+hset <key> <subkey> <value>
+hset hiren age 20
+```
+######Get command
+```
+hget <key> <subkey>
+```
+######Get all value
+```
+hgetall <key>
+```
+######Return only keys or values
+```
+hvals <key>
+hkeys <key>
+```
+######Check value existence 
+```
+hexits <key> <subkey>
+```
+######Increment
+```
+hincrby <key> <subkey>
+hincrbyfloat <key> <subkey>
+```
+######Check length
+```
+hlen <key>
+```
+######Multiple get
+```
+hmget <key> <subkey> <subkey>
+```
+######Multipke set
+```
+hmset <key> <subkey> <value> <subkey> <value>
+```
+######Set if doesnt exits
+```
+hsetnx <key> <subkey> <value>
+```
+######Delete
+```
+hdel <key> <subkey>
 ```
 
 
