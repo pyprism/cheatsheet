@@ -204,8 +204,10 @@ sdiff <set name> <set name>
 ```
 sdiff <new set name>  <set name> <set name>
 ```
-
-
+#####Intersection(common members) in both set
+```
+sinter <set 1> <set 2>
+```
 
 
 
