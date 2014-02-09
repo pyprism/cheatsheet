@@ -208,6 +208,18 @@ sdiff <new set name>  <set name> <set name>
 ```
 sinter <set 1> <set 2>
 ```
+######Union between sets
+```
+sunion <set 1> <set 2>
+```
+######Store union result
+```
+sunionstore  <new set >  <set 1> <set 2>
+```
+######Move value from 1 set to another
+```
+smove <old set> <new set> <value>
+```
 
 
 
