@@ -168,6 +168,42 @@ hsetnx <key> <subkey> <value>
 hdel <key> <subkey>
 ```
 ####Set
+######Add single or multiple value
+```
+sadd <set name> <value> <value>
+```
+######Remove value
+```
+srem <set name> <value>
+```
+######Show all members
+```
+smembers <set name>
+```
+######CHeck if already exists or not
+```
+sismember <setname> <value>
+```
+#####Check how many item in set
+```
+scard <set name>
+```
+######Take random item from set
+```
+sranmember <set name>
+```
+######Take random member out of the set
+```
+spop <set name>
+```
+######Check member defference in two set
+```
+sdiff <set name> <set name>
+```
+######Check difference and store in new set
+```
+sdiff <new set name>  <set name> <set name>
+```
 
 
 
