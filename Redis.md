@@ -221,6 +221,76 @@ sunionstore  <new set >  <set 1> <set 2>
 smove <old set> <new set> <value>
 ```
 
+##Other Commands
+
+######Search all keys
+```
+keys *
+```
+######Search using specific pattern
+```
+keys hiren*
+keys hire
+```
+######Check if key exist
+```
+exits <key name>
+```
+######Check type of a key
+```
+type <key name>
+```
+#####Delete key
+```
+del <key name>
+```
+######Move to different database
+```
+move <key name>  <database number>
+move hiren 2
+```
+######Select database
+```
+select <database number>
+select 1
+```
+######Expire
+```
+expire <key name> <Second>
+```
+######Time to live
+```
+ttl <keyname> <secound>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
