@@ -119,6 +119,25 @@ lset <list name> <index number> <new value>
 ```
 ltrim <list name> <starting position> <ending position>
 ```
+#####List sorting
+######Basic Sorting
+```
+sort <list key>
+```
+###### Sort with limit
+```
+sort <list key> limit <starting point> <ending point>
+```
+###### Sort descending or ascending 
+```
+sort <list key> asc
+sort <list key> desc
+```
+######Sort characters
+```
+sort <list key name> alpha
+```
+
 ####Hash
 ######Set command
 ```
