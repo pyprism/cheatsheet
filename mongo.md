@@ -7,6 +7,7 @@
 * Connect mongp shell : mongo
 * Show all databases : show dbs
 * Connect to a database : use databaseName
+* show collections in current database : show collections
 * Show connected database : db
 * Show list of documents : db.links.count()
 
@@ -18,19 +19,25 @@
  ``` 
  db.links.insert({name : "hello",age : "fuck" , tag :["s","x"]})
  ```
- #####Javascript way
+Javascript way
  ```
  var doc = {};
  doc.title = "net";
  doc.age = "fuck";
  db.links.save(doc)    #now save
  ```
-Print/Show :
+Print/Show
+```
 db.links.find()
-   OR
+```   
+Or for nice output
+```
 db.links.find().forEach(printjson)  
-
-Show time from objectId : db.links.find()[1]._id.getTimestamp()
+```
+Show object creation time 
+```
+db.links.find()[1]._id.getTimestamp()
+```
 
 Query :
 db.DOCUMENTNAME.find({ key : value })
