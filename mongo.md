@@ -10,15 +10,21 @@
 * Show connected database : db
 * Show list of documents : db.links.count()
 
-Insert :
- db.links.insert({name : "hello",age : "fuck" , tag :["s","x"]})   #simple way
- 
-Javascript way :
+####Insert
+ ```
+ db.collection.insert({})
+ ```
+ Example
+ ``` 
+ db.links.insert({name : "hello",age : "fuck" , tag :["s","x"]})
+ ```
+ #####Javascript way
+ ```
  var doc = {};
  doc.title = "net";
  doc.age = "fuck";
  db.links.save(doc)    #now save
- 
+ ```
 Print/Show :
 db.links.find()
    OR
