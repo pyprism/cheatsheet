@@ -1,14 +1,14 @@
-Term :
-Collection : Table (SQL)
-Document : Record or Row (SQL)
-Field (key : value) : Column (SQL)
+####Term
+* Collection : Table (SQL)
+* Document : Record or Row (SQL)
+* Field (key : value) : Column (SQL)
 
-
-connect mongp shell : mongo
-show all databases : show dbs
-connect to a database : use databaseName
-show connected database : db
-show list of documents : db.links.count()
+####Simple Commands
+* Connect mongp shell : mongo
+* Show all databases : show dbs
+* Connect to a database : use databaseName
+* Show connected database : db
+* Show list of documents : db.links.count()
 
 Insert :
  db.links.insert({name : "hello",age : "fuck" , tag :["s","x"]})   #simple way
