@@ -39,11 +39,25 @@ Show object creation time
 db.links.find()[1]._id.getTimestamp()
 ```
 
-Query :
+#### Query
+Find by key-value / return cursor object
+```
 db.DOCUMENTNAME.find({ key : value })
+```
+Return single object
+```
 db.DOCUMENTNAME.findOne({ key : value }).SUBCATEGORY
-db.DOCUMENTNAME.find({ key : value } , { key : 1 , key : 0 } )  # Key : 1 means True and Key : 0 means False => For enable / disable certain value for printing
+```
+Print specific value
+```
+db.DOCUMENTNAME.find({ key : value } , { key : 1 , key : 1 , _id : 0} )  # Key : 1 means True and Key : 0 means False => For 
+enable / disable certain value for printing
+```
+Quering nested object
+```
 db.DOCUMENTNAME.find({ key.subobject : value })
+```
+
 db.DOCUMENTNAME.find({ key : value } , {key.subobject : 0})
 db.DOCUMENTNAME.find({ key : {$gt : 20} })   # $gt means greater then 
 db.DOCUMENTNAME.find({ key : {$lt : 20} })    # $lt means less then
