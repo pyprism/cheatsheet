@@ -56,15 +56,26 @@ enable / disable certain value for printing
 Quering nested object
 ```
 db.DOCUMENTNAME.find({ key.subobject : value })
+db.DOCUMENTNAME.find({ key : value } , {key.subobject : 0})
+```
+Find object greater/less  than or equal to 
+```
+db.DOCUMENTNAME.find({ key : {$gt : 20} })   
+db.DOCUMENTNAME.find({ key : {$lt : 20} })
+db.DOCUMENTNAME.find({ key : {$gt : 20 , $lt : 25} })
+db.DOCUMENTNAME.find({ key : {$gte : 20 , $lt : 25} })
+```
+Some others operators : $in = include , $nin = not include
+```
+db.DOCUMENTNAME.find({ key : {$in : [20 , 30] } }) 
+db.DOCUMENTNAME.find({ key : {$nin : [20 , 30] } })  
+db.DOCUMENTNAME.find({ key : {$ne : "code" } }) 
+```
+$all operator : find both value
+```
+db.document.find({'hiren':{ $all : ['rater' , 'santo' , 'tara' }})
 ```
 
-db.DOCUMENTNAME.find({ key : value } , {key.subobject : 0})
-db.DOCUMENTNAME.find({ key : {$gt : 20} })   # $gt means greater then 
-db.DOCUMENTNAME.find({ key : {$lt : 20} })    # $lt means less then
-db.DOCUMENTNAME.find({ key : {$gt : 20 , $lt : 25} }) 
-db.DOCUMENTNAME.find({ key : {$in : [20 , 30] } })  # $in means any two values ( 20  or 30 ) are  included
-db.DOCUMENTNAME.find({ key : {$nin : [20 , 30] } })  # $in means any two values ( 20  or 30 ) are not included
-db.DOCUMENTNAME.find({ key : {$ne : "code" } })  # $ne means not equal to "code"
 db.users.find({ $or : [{ 'name.first' : "John" }, { 'name.last" : "Wilson"}]  # $or > print name.first == john or print name.last == Wilson
 db.users.find({ $nor : [{ 'name.first' : "John" }, { 'name.last" : "Wilson"}]  # $nor (not or )  > print dont have name.first == john or print dont have name.last == Wilson
 db.users.find({ $and : [{ 'name.first' : 'John' }, { 'name.last' : 'Doe'} ] }) # $and means must fullfill two conditions
