@@ -71,23 +71,34 @@ db.DOCUMENTNAME.find({ key : {$in : [20 , 30] } })
 db.DOCUMENTNAME.find({ key : {$nin : [20 , 30] } })  
 db.DOCUMENTNAME.find({ key : {$ne : "code" } }) 
 ```
-$all operator : find both value
+$all operator : find all values not just one
 ```
 db.document.find({'hiren':{ $all : ['rater' , 'santo' , 'tara' }})
 ```
+Now equal operator
+```
+db.hiren.find({ $ne : "nish" })
+```
+Boolean operators : $or , $nor =  not or , $and
+```
+db.users.find({ $or : [{ 'name.first' : "Naima" }, { 'name.last" : "Anjum"}]  
+db.users.find({ $nor : [{ 'name.first' : "Naima" }, { 'name.last" : "Anjum"}]
+db.users.find({ $and : [{ 'name.first' : "Naima" }, { 'name.last" : "Anjum"}]
+```
+Specialized operator : $exits , $not 
+```
+db.users.find({ email : { $exits : true }},) 
+db.links.find({ age : { $not : {$lt : 100 }}}  
+```
 
-db.users.find({ $or : [{ 'name.first' : "John" }, { 'name.last" : "Wilson"}]  # $or > print name.first == john or print name.last == Wilson
-db.users.find({ $nor : [{ 'name.first' : "John" }, { 'name.last" : "Wilson"}]  # $nor (not or )  > print dont have name.first == john or print dont have name.last == Wilson
-db.users.find({ $and : [{ 'name.first' : 'John' }, { 'name.last' : 'Doe'} ] }) # $and means must fullfill two conditions
-db.users.find({ email : { $exits : true }},) # retrun all of documents that have email field exits
-db.links.find({ age : { $not : {$lt : 100 }}}   # retrun age that less than 100
 Some Other Operator :
 $mod
 $elemMatch
 $where
-
-db.links.distinct('favourites')  # remove duplicate
-
+##remove duplicate
+```
+db.links.distinct('favourites')  
+```
 db.links.group({ key : { userId : true }) 
 
 
