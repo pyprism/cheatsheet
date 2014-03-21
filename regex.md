@@ -1,7 +1,7 @@
 Symbol | Meaning
 --------|------
 . |	Any character except newline.
-\. | 	A period (and so on for \*, \(, \\, etc.)
+\. | 	A period (and so on for \\*, \\(, \\, etc .)
 ^ |	The start of the string.
 $ |	The end of the string.
 \d,\w,\s |	A digit, word character [A-Za-z0-9_], or whitespace.
@@ -22,4 +22,3 @@ aa|bb   Either aa or bb.
 (?:expr) 	Non-capturing group.
 (?=expr) 	Followed by expr.
 (?!expr) 	Not followed by expr.
-```
