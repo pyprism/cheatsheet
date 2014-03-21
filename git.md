@@ -108,6 +108,11 @@ git marge branchName
 ```
 git branch -d branchName
 ```
+####Difference between commits
+```
+git diff <commit hash> <another commit hash>
+git diff WETE6874EWR 54qwertwe6q
+```
 ####Rebase
 ```
 git rebase branchName
@@ -142,63 +147,38 @@ git clean -n
 ```
 git clean -i
 ```
+####Stash
+#####Stash latest changes
+```
+git stash
+```
+#####Stash list
+```
+git stash list
+```
+#####Stash with message
+```
+git stash save "Your Boring Message"
+``` 
+#####Apply latest stash to working directory
+```
+git stash apply
+```
+#####Drop stash from list
+```
+git stash pop stash@{1}
+```
+#####Drop stash from list
+```
+git stash drop
+```
+####Alias
+Create alias of git commands
+```
+git config --global alias.<alias word> <command>
+git config --global alias.a add
+```
 
-git reset <filename>      #unstatge file
-git branch <branchname>   #for making bruch of main Master brunch
-git checkout <branchname> #swicth branch
-git rm 'filename'         #remove file from disk
-git merge <branchname>    #before u do this go back to the master branch
-git branch -d <branchname> #for delete a branch
-git push                  # push to remote repo
-
-   =================================================><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>=====================================================
-   
- git system level config = git config --system
- git user level config = git config --glbal
- 
- set user level username and email  = git config --global user.name "Ashutosh Das"
-                                                        git config --global user.email "Your@email.com"
-set up default editor = git config --global core.editor "nano"
-****See those configuration = git config --list
-
-git auto-completion = curl -OL https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
-                                mv ~/git-completion.bash ~/.git-completion.bash
-                                nano .bash_profile
-                      [code] if [ -f ~/.git-completion.bash ]; then
-                                        source ~/.git-completion.bash
-                                 fi [code]
-
-
-initializing repo = git init
-add all files = git add .
-add file = git add filename
-commit = git commit -m "commit mesg"
-see all commit messages = git log 
-limits the no of commit = git log -n 2
-specify date of commit = git log --since=2012-12-12
-                                or   git log --until= 2012-12-15
-
-show commit by specific author = git log --author="name"
-search commit messages using regex = git log --grep="init"
-check status : git status
-show diference between files : git deff
-delete any file = git rm filenames
-rename files = git mv OldFileName NewFileName
-
-add and commit file at same time = git commit -am "commit mesg"  #only usefull for modified files
-
-undo :>>>>>
-        git checkout -- filename [ -- means checkout in current branch ]
-  undo staged file = git reset HEAD filename
-  
-  
-ignore files = nano .gitignore
-                      filenames [we can use regex ]
-
-push to remote host :>>>>
-        check remote = git remote
-        add remote = git remote add <alias> <url>
-        push to remote = git push -u origin master
                     
  
 
