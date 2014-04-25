@@ -1,4 +1,4 @@
-##Chapter 1
+##Chapter 1 ~::~ Nmap Fundamentals
 ####Listing open ports on a remote host
 ```
 nmap hiren.com
@@ -56,7 +56,7 @@ nmap --script <script name> <host>
 ```
 nmap -e <INTERFACE> scanme.nmap.org
 ```
-#Chapter 2
+#Chapter 2 ~::~ Network Exploration
 ####Discovering hosts with TCP SYN ping scans
 ```
 nmap -sP -PS 192.168.1.1/24
@@ -97,7 +97,7 @@ Force DNS resulation even if host is offline :(
 ```
 nmap -sS -PS -F -R XX.XXX.XXX.220-230
 ```
-
+##Chapter 3 ~::~ Gathering Additional Host Information
 
 
 
