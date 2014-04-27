@@ -98,8 +98,8 @@ Force DNS resulation even if host is offline :(
 nmap -sS -PS -F -R XX.XXX.XXX.220-230
 ```
 ##Chapter 3 ~::~ Gathering Additional Host Information
-
-
+##Chapter 4 ~::~ Auditing Web Servers
+##Chapter 5 ~::~ Auditing Databases
 
 
 
