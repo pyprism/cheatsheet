@@ -98,6 +98,58 @@ Force DNS resulation even if host is offline :(
 nmap -sS -PS -F -R XX.XXX.XXX.220-230
 ```
 ##Chapter 3 ~::~ Gathering Additional Host Information
+####Getting information from WHOIS records
+```
+nmap --script whois <target>
+```
+####Collecting valid e-mail accounts
+The script http-google-email is not included in Nmap's official repository. So you
+need to download it from http://seclists.org/nmap-dev/2011/q3/att-401/
+http-google-email.nse and copy it to your local scripts directory. After copying
+http-google-email.nse , you should update the script database with:
+```
+nmap --script-updatedb
+```
+then
+```
+nmap -p80 --script http-google-email,http-email-harvest <target>
+```
+####Discovering hostnames pointing to the same IP address
+https://secwiki.org/w/Nmap/
+External_Script_Library .
+```
+nmap --script-updatedb
+nmap -p80 --script hostmap nmap.org
+```
+####Brute forcing DNS records
+```
+nmap --script dns-brute <target>
+```
+####Fingerprinting the operating system of a host
+```
+nmap -O <target>
+```
+####Discovering UDP services
+```
+nmap -sU -p- <target>
+```
+####Listing protocols supported by a remote host
+```
+nmap -sO <target>
+```
+####Discovering stateful firewalls by using a TCP ACK scan
+```
+nmap -sA <target>
+```
+#####Port states
+Nmap categorizes ports using the following states:
+> Open : Indicates that an application is listening for connections on this port.
+> Closed : Indicates that the probes were received but there is no application listening on this port.
+> Filtered : Indicates that the probes were not received and the state could not be established. It also indicates that the probes are being dropped by some kind of filtering.
+> Unfiltered : Indicates that the probes were received but a state could not be established.
+> Open/Filtered : Indicates that Nmap couldn't determine if the port is filtered or open.
+> Closed/Filtered : Indicates that Nmap couldn't determine if the port is filtered
+or closed.
 ##Chapter 4 ~::~ Auditing Web Servers
 ##Chapter 5 ~::~ Auditing Databases
 
