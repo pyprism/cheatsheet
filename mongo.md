@@ -34,6 +34,10 @@ Or for nice output
 ```
 db.links.find().forEach(printjson)  
 ```
+Or
+```
+db.collections.find().pretty()
+```
 Show object creation time 
 ```
 db.links.find()[1]._id.getTimestamp()
