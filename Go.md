@@ -24,3 +24,21 @@
  var hiren string
  var a, b , c int
 ```
+######OR
+```
+var hiren = "Yo :D!"
+```
+######Or 
+```
+hiren := "Shorthand Yo! :/ "
+```
+#####Pointer
+```
+var <name> *<type>
+var xoxo := "o_O"
+var pointermama string = &xoxo
+```
+######Pointer assignment
+```
+*pointermama = "another value"
+```
