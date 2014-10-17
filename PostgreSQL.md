@@ -2,9 +2,15 @@ Start PostgresSQL from terminal
 ```
 sudo -i -u postgres
 ```
+Create user
+```
+$ sudo su - postgres
+createuser --interactive -P
+```
+
 Create database
 ```
-createdb hiren
+createdb --owner ownername databasename
 ```
 Connect to a database
 ```
