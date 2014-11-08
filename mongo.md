@@ -4,7 +4,7 @@
 * Field (key : value) : Column (SQL)
 
 ####Simple Commands
-* Connect mongp shell : mongo
+* Connect mongo shell : mongo
 * Show all databases : show dbs
 * Connect to a database : use databaseName
 * show collections in current database : show collections
