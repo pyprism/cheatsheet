@@ -24,7 +24,7 @@
  var hiren string
  var a, b , c int
 ```
-######OR
+######Or
 ```
 var hiren = "Yo :D!"
 ```
@@ -32,6 +32,16 @@ var hiren = "Yo :D!"
 ```
 hiren := "Shorthand Yo! :/ "
 ```
+#####Multi Initialization
+```
+var <variable name> <type> = <value>
+var hiren, nish, nan int= 1 , 2 , 3
+```
+######shortform  :D
+```
+hiren, nish, nan := 1, "srting",  false
+```
+
 #####Pointer
 ```
 var <name> *<type>
