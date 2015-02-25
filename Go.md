@@ -52,3 +52,27 @@ var pointermama string = &xoxo
 ```
 *pointermama = "another value"
 ```
+#####Struct
+```
+type <name> struct {
+    <var name> <type>
+}
+
+//example
+type Hiren struct {
+    nan string
+    nish string
+}
+
+//assinment
+var prism = Hiren{ "Example", "example" }
+//or
+var prism = Hiren{ nish : "Example", nan: "example }
+//or 
+var prism = Hiren{}
+prism.nan = "bla blah"
+prism.nish = "yo yo "
+
+//access 
+fmt.Println(prism.nan)
+```
