@@ -76,3 +76,9 @@ prism.nish = "yo yo "
 //access 
 fmt.Println(prism.nan)
 ```
+#####Function
+```
+func Example(<name> <type>){
+
+}
+```
