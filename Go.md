@@ -78,7 +78,33 @@ fmt.Println(prism.nan)
 ```
 #####Function
 ```
-func Example(<name> <type>){
-
+func Example(<name> <type>)<return type>{
+   return bla bla
 }
+
+func Hiren(hiren string) string {
+   return 'hello'
+   }
+```
+####Multiple returns
+```
+func example(<name> <type>) ( multiple return type separated by comma){
+   return <return value separated by comma>
+}
+
+func example(hiren string) (string, string) {
+   return 'hi', 'hello'
+   }
+```
+####Named returns
+```
+func example(<name> <type>) ( multiple return type with name separated by comma){
+   return 
+}
+
+func example(hiren string) (hi string, hello string) {
+   hi = "hi"
+   hello = "holla"
+   return
+   }
 ```
