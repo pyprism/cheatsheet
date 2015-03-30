@@ -86,7 +86,7 @@ func Hiren(hiren string) string {
    return 'hello'
    }
 ```
-####Multiple returns
+######Multiple returns
 ```
 func example(<name> <type>) ( multiple return type separated by comma){
    return <return value separated by comma>
@@ -96,7 +96,7 @@ func example(hiren string) (string, string) {
    return 'hi', 'hello'
    }
 ```
-####Named returns
+######Named returns
 ```
 func example(<name> <type>) ( multiple return type with name separated by comma){
    return 
@@ -107,4 +107,19 @@ func example(hiren string) (hi string, hello string) {
    hello = "holla"
    return
    }
+```
+######Variadic function
+passing unlimited value in the fucntion
+```
+func example( yo name ...string) string {
+   return name[0]
+}
+```
+######Closure
+```
+function Xoxo(yo string) function() int{
+   return func() int {
+      return 1
+      }
+ }
 ```
