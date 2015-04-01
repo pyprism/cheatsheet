@@ -123,3 +123,17 @@ function Xoxo(yo string) function() int{
       }
  }
 ```
+#####Branching
+######If
+```
+if <optional statment>; <conditions> { //brackets are not optional for on liner ! 
+   //
+}
+
+ if a := 1; a == ! {
+  //
+ }else {
+ //
+ }
+```
+######Switch
