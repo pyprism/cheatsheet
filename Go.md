@@ -137,3 +137,12 @@ if <optional statment>; <conditions> { //brackets are not optional for on liner 
  }
 ```
 ######Switch
+>No default fall through
+>Dont need an expression
+>Cases can be expressions
+```
+exm := 'hiren'
+switch exm {
+  case 
+}
+```
