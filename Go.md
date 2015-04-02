@@ -141,8 +141,43 @@ if <optional statment>; <conditions> { //brackets are not optional for on liner 
 >Dont need an expression
 >Cases can be expressions
 ```
+switch <var> {
+   case <value> : <something>
+   default : <something>
+}
+
 exm := 'hiren'
 switch exm {
-  case 
+  case 'hiren':fmt.Print("hiren")
 }
+```
+######Fallthrough  in Switch
+```
+yo := "boy"
+switch yo{
+  case "boy" : 
+      x := 1
+      fallthrough
+ case "yo":
+      x := 2
+}
+```
+###### Multiple case in Switch
+```
+yo := "boy"
+switch yo{
+  case "boy", "man" :   // It can be list or whatever ! :P  
+      x := 1
+      fallthrough
+ case "yo":
+      x := 2
+```
+###### Use conditions in Switch 
+```
+yo := "boy"
+switch{
+  case yo == "boy" , len(yo) == 2: 
+      x := 1
+ case yo == "yo":
+      x := 2
 ```
