@@ -145,12 +145,14 @@ switch <var> {
    case <value> : <something>
    default : <something>
 }
-
+```
+```
 exm := 'hiren'
 switch exm {
   case 'hiren':fmt.Print("hiren")
 }
 ```
+
 ######Fallthrough  in Switch
 ```
 yo := "boy"
