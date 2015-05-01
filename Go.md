@@ -183,3 +183,10 @@ switch{
  case yo == "yo":
       x := 2
 ```
+
+######Loops
+```
+ for i:=0; i < example; i++ {
+   //block
+   }
+```
