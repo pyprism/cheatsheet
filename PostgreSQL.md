@@ -2,6 +2,15 @@ Start PostgresSQL from terminal
 ```
 sudo -i -u postgres
 ```
+
+Change default root user `postgres` password
+```
+sudo -u postgres psql postgres
+
+# \password postgres
+
+```
+
 Create user
 ```
 $ sudo su - postgres
