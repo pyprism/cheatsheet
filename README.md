@@ -1,1 +1,1 @@
-Personal cheat sheet :)
+Personal cheat sheet :smile:
